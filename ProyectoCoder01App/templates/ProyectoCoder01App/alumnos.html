@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+<h4>Estos son los alumnos: </h4>
+<p>{% for a in object_list %}</p>
+<li>{{a.nombre_alumno}} {{a.apellido_alumno}}, {{a.curso_alumno}} - {{a.calificacion_alumno}}</li>
+{% endfor %}
+
+
+
+{% endblock %}
